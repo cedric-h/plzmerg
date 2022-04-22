@@ -30,82 +30,10 @@ const basicDoc = payload => `
 
 app.use(express.static('public'))
 
-const ced = {
-  morning: {
-    intros: [
-      "haiii makin anything cool?",
-      `sup nerd.
-        next game hatch wen?`,
-    ],
-    prompt: "im finally making a game that doesn't\n" +
-      'take place in a cave!\n' +
-      'im proud to say my cave goblin days\n' +
-      'are coming to an end :)',
-    promptOpts: {
-      bad: "NOOOO ced don't cave on me!!!",
-      good: "glad you're leaving your gloomy comfort zone!"
-    },
-    goodAnswerRes: 'woaa, the cave is a metaphor\n' +
-      'for being stuck somewhere creatively :O\n' +
-      '\n' +
-      "you're a genius!!!",
-    goodAnswerOpts: {
-      bad: 'i thought that was intentional\n' +
-        'on your part :| guess you weren\'t as\n' +
-        'clever as I thought you were LOL',
-      good: "stop acting like you didn't do\nthat on purpose lol"
-    },
-    badAnswerRes: 'that pun ... hurts.\n' +
-      "and leeza its boring to do\n" +
-      "the same thing over n over ;o;",
-    badAnswerOpts: {
-      good: 'well ya, im sure cave air gets\n' +
-        'stale after a while :P\n' +
-        'maybe make a game that takes place\n' +
-        'in a nice wooded meadow :)',
-      bad: 'GET BACK TO YOUR CAVES, GOBLIN!!!'
-    }
-  },
-  afternoon: {
-    intros: [
-      "do you ever get the feeling \nthat someone is watching you?",
-      `don't look behind you right \nnow. it's for your own good.`,
-    ],
-    prompt: "you're really trying \nto make me spend another week\n" +
-      " frantically trying to prove \nthat my fbi guy exists,\n" +
-      " aren't you.",
-    promptOpts: {
-      bad: "as if anyone would want \nto spend time watching YOU",
-      good: "bold of you to assume \nthat you're not\n" +
-        " talking to your fbi \nperson right now >:("
-    },
-    goodAnswerRes: "oh really, you're my fbi guy?\n" +
-      " then what am I doing right now?",
-    goodAnswerOpts: {
-      bad: "wasting time thinking too hard \nabout a juvenile thought experiment",
-      good: "being interrogated without even realizing it!!!"
-    },
-    badAnswerRes: 'well its their JOB. besides, i think i make it\n' +
-      ' pretty entertaining for them >:)\n',
-    badAnswerOpts: {
-      good: 'i wonder if our fbi guys are frens :3',
-      bad: 'entertaining? hell, your fbi guy\nthinks he\'s watching a sitcom.'
-    }
-  },
-  final: {
-    bestCase: "merges PR immediately\n" +
-      "and pushes it into prod without even\n" +
-      "testing it!",
-    mediocre: "reviews the PR carefully ... _\n" +
-      "... as eleeza has hardly been consistent\n" +
-      "as of late ...",
-    worstCase: "rejects the PR without even\n" +
-      "looking at the code",
-  },
-  name: "ced",
-  frens: ["jxf", "eleeza", "omar"],
-};
-require("fs").writeFileSync("hcers.json", JSON.stringify({ ced }, null, 2), "utf-8")
+const hcers = JSON.parse(require("fs").readFileSync("hcers.json", "utf-8"));
+const saveHcers = () => 
+  require("fs")
+      .writeFileSync("hcers.json", JSON.stringify(hcers), "utf-8")
 
 function *makeInteraction(intro, save) {
   do {
@@ -302,6 +230,13 @@ function *makeMorningInteraction(save) {
 }
 
 function *makeAfternoonInteraction(save) {
+  yield `that was fun, no?
+
+    a few hours later, in the afternoon, eleeza reaches out
+    to you again. this time, it's not about what you've been
+    working on, but something else entirely.
+  `;
+
   yield *makeInteraction(
     `perhaps what you're doing for fun, or making to eat?
      what does eleeza say in her message?`,
@@ -384,6 +319,12 @@ function *makeFinalInteraction(save) {
     makeFinalInteraction(save);
 }
 
+function *makeInteractions(save) {
+  yield *makeMorningInteraction(save);
+  yield *makeAfternoonInteraction(save);
+  yield *makeFinalInteraction(save);
+}
+
 function *yesno(q) {
   let answer;
   while (!["y", "yes", "n", "no"].includes(answer = yield q))
@@ -407,51 +348,184 @@ function *seshGen() {
   }
 
   function *add() {
-    const save = JSON.parse(JSON.stringify(ced));
+    const save = JSON.parse(JSON.stringify(hcers.ced));
 
     yield `sup nerds. its me, ced!
       i trust you've come here to be added to the sim?
       worry not, for it is a simple process!
 
       all you need to do are answer some hypothetical questions
-      about a fictional conversation between you and eleeza!
+      about a fictional conversation between #you# and "eleeza"!
 
       press enter to continue.
     `;
 
     yield `my answers to these questions are supplied as defaults to
       get your creative juices flowing, but I'm not sure I did
-      a great job of staying in character as eleeza.
+      a great job of #staying in character# as eleeza.
 
       maybe you can do better! to clear out my
       responses immediately,
-      just use shift + backspace.
+      just use "shift + backspace".
     `,
 
-    yield *makeMorningInteraction(save);
-
-    yield `that was fun, no?
-
-      a few hours later, in the afternoon, eleeza reaches out
-      to you again. this time, it's not about what you've been
-      working on, but something else entirely.
-    `;
-
-    yield *makeAfternoonInteraction(save);
-
-    yield *makeFinalInteraction(save);
+    yield *makeInteractions(save);
 
     yield `great, you're all done!
       your character should exist in the edit page,
       as well as in the game itself!`;
+
+    hcers[save.name] = save;
+    saveHcers();
+  }
+
+  function *chooseHcer(verb) {
+    let names = Object.keys(hcers);
+
+    let msg = `which hcer ${verb}?\n`;
+    const ROW_SIZE = 3;
+    for (let i = 0; i < Math.ceil(names.length/ROW_SIZE); i++) {
+      msg += names.splice(0, ROW_SIZE).join(", ") + "\n";
+    }
+    console.log('making msg for chooseHcer', names, msg);
+
+    names = Object.keys(hcers);
+    let name;
+    while (!hcers[name = yield msg])
+      ;
+    return hcers[name];
+  }
+
+  function *choose(prompt, opts) {
+    opts = Object.entries(opts)
+      .sort(_ => 0.5 - Math.random())
+      .map(([key, val]) => ({ key, val }));
+    let msg = `${prompt}
+
+    "0 - ${opts[0].val}"
+
+    #1 - ${opts[1].val}#`;
+
+    let select;
+    while (!(select = opts[yield msg]))
+      ;
+    return select;
   }
 
   function *play() {
-    yield "TODO ig";
+    const alreadyMet = new Set();
+
+    const scoreboard = new Map();
+    const boostScore = (name, boost) =>
+      scoreboard.set(name, (scoreboard.get(name) ?? 0) + boost);
+
+    function *interact(stageName) {
+      let save;
+      do {
+        save = yield* chooseHcer("to talk to");
+      } while (
+        alreadyMet.has(save.name) &&
+          !(yield `${save.name}'s offline right now. maybe try again in a bit?`)
+      );
+      let stage = save[stageName];
+
+      while (!stage.intros[yield `"0 - ${stage.intros[0]}",
+
+        #1 - ${stage.intros[1]}#`]);
+
+      const select = yield* choose(stage.prompt, stage.promptOpts);
+
+      const nextSelect = yield* choose(
+        stage[select.key + "AnswerRes"],
+        stage[select.key + "AnswerOpts"],
+      );
+
+      const favor = Math.sign((    select.key == "good") - 0.5) +
+                    Math.sign((nextSelect.key == "good") - 0.5);
+
+      if (favor == 2)
+        yield `${save.name} reacts with a :yay: emoji \nand then goes offline.`;
+      else if (favor == -2)
+        yield `${save.name} reacts with a :angery: emoji \nand then goes offline.`;
+      else
+        yield `${save.name} reacts with an :eyes: emoji \nand then goes offline.`;
+
+      alreadyMet.add(save.name);
+
+      boostScore(save.name, favor);
+
+      for (const fren of save.frens)
+        boostScore(fren, Math.sign(favor));
+    }
+
+    yield `eleeza yawns and stretches.
+
+      how about some silly creative
+      inspiration to start the day?
+
+      let's see who's on the Slack!`;
+
+    for (let i = 0; i < 2; i++) yield* interact('morning');
+    alreadyMet.clear();
+
+    yield `the sun reaches its zenith ...`;
+
+    for (let i = 0; i < 2; i++) yield* interact('afternoon');
+
+    yield `geez, how time is slipping by ...
+      eleeza feels she'd better not
+      let this day go to waste!
+
+      contributing to someone's open source
+      project feels like a surefire way to
+      make something of the day ...
+      
+      which hack clubber will she collaborate with?
+      choose carefully! hack clubbers who you haven't
+      schmoozed enough may not feel too keen about
+      merging your pull request!`;
+
+    const save = yield* chooseHcer("to collab with");
+
+    yield `you begin hacking on ${save.name}'s project,
+
+      riddling the project with allusions to DEB,
+      giving it a "dark academia" aesthetic, and 
+      matching soundtrack ...
+
+      as you bring your modifications to a close,
+      you begin to worry ... will your contributions
+      be accepted after all?
+      
+      tenatively, you dm them a link to your pull request ...
+    `;
+
+    let msg;
+    if (scoreboard.get(save.name) >= 4)
+      msg = save.final.bestCase;
+    else if (scoreboard.get(save.name) <= -4)
+      msg = save.final.worstCase;
+    else
+      msg = save.final.mediocre;
+
+    yield `${save.name} ${msg}
+
+    THE END`;
   }
 
   function *edit() {
-    yield "uh TODO, ye";
+    const save = yield* chooseHcer("to edit");
+    let oldName = save.name;
+
+    yield *makeInteractions(save);
+
+    yield `great, you're all done!
+      your changes should have taken effect!`;
+
+    delete hcers[oldName]
+    hcers[save.name] = save;
+
+    saveHcers();
   }
 }
 

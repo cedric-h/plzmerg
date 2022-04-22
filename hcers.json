@@ -1,57 +1,112 @@
 {
-  "ced": {
-    "morning": {
-      "intros": [
-        "haiii makin anything cool?",
-        "sup nerd.\n        next game hatch wen?"
-      ],
-      "prompt": "im finally making a game that doesn't\ntake place in a cave!\nim proud to say my cave goblin days\nare coming to an end :)",
-      "promptOpts": {
-        "bad": "NOOOO ced don't cave on me!!!",
-        "good": "glad you're leaving your gloomy comfort zone!"
-      },
-      "goodAnswerRes": "woaa, the cave is a metaphor\nfor being stuck somewhere creatively :O\n\nyou're a genius!!!",
-      "goodAnswerOpts": {
-        "bad": "i thought that was intentional\non your part :| guess you weren't as\nclever as I thought you were LOL",
-        "good": "stop acting like you didn't do\nthat on purpose lol"
-      },
-      "badAnswerRes": "that pun ... hurts.\nand leeza its boring to do\nthe same thing over n over ;o;",
-      "badAnswerOpts": {
-        "good": "well ya, im sure cave air gets\nstale after a while :P\nmaybe make a game that takes place\nin a nice wooded meadow :)",
-        "bad": "GET BACK TO YOUR CAVES, GOBLIN!!!"
-      }
+    "bob": {
+        "afternoon": {
+            "badAnswerOpts": {
+                "bad": "no u lie",
+                "good": "ya waz jok"
+            },
+            "badAnswerRes": "... but u liek foobar 2?",
+            "goodAnswerOpts": {
+                "bad": "jk lol ur nerd",
+                "good": "ya foobar homie dope"
+            },
+            "goodAnswerRes": "FOOBARRR HOMIEEE",
+            "intros": [
+                "u liek foobar?",
+                "foobar?"
+            ],
+            "prompt": "I LUV FOOBAR",
+            "promptOpts": {
+                "bad": "ha nerd",
+                "good": "FOOBAR HOMIE"
+            }
+        },
+        "final": {
+            "bestCase": "merg pr",
+            "mediocre": "review pr",
+            "worstCase": "reject pr"
+        },
+        "frens": [
+            "ced",
+            "ced",
+            "ced"
+        ],
+        "morning": {
+            "badAnswerOpts": {
+                "bad": "wat",
+                "good": "jk ur stuff cool"
+            },
+            "badAnswerRes": "oof",
+            "goodAnswerOpts": {
+                "bad": "(kinda)",
+                "good": "yaaa!!!"
+            },
+            "goodAnswerRes": "cool stuffz!!!",
+            "intros": [
+                "wat u maek?",
+                "u maek gud?"
+            ],
+            "prompt": "i maek v v gud",
+            "promptOpts": {
+                "bad": "o rly?",
+                "good": "yaaa!!!"
+            }
+        },
+        "name": "bob"
     },
-    "afternoon": {
-      "intros": [
-        "do you ever get the feeling \nthat someone is watching you?",
-        "don't look behind you right \nnow. it's for your own good."
-      ],
-      "prompt": "you're really trying \nto make me spend another week\n frantically trying to prove \nthat my fbi guy exists,\n aren't you.",
-      "promptOpts": {
-        "bad": "as if anyone would want \nto spend time watching YOU",
-        "good": "bold of you to assume \nthat you're not\n talking to your fbi \nperson right now >:("
-      },
-      "goodAnswerRes": "oh really, you're my fbi guy?\n then what am I doing right now?",
-      "goodAnswerOpts": {
-        "bad": "wasting time thinking too hard \nabout a juvenile thought experiment",
-        "good": "being interrogated without even realizing it!!!"
-      },
-      "badAnswerRes": "well its their JOB. besides, i think i make it\n pretty entertaining for them >:)\n",
-      "badAnswerOpts": {
-        "good": "i wonder if our fbi guys are frens :3",
-        "bad": "entertaining? hell, your fbi guy\nthinks he's watching a sitcom."
-      }
-    },
-    "final": {
-      "bestCase": "merges PR immediately\nand pushes it into prod without even\ntesting it!",
-      "mediocre": "reviews the PR carefully ... _\n... as eleeza has hardly been consistent\nas of late ...",
-      "worstCase": "rejects the PR without even\nlooking at the code"
-    },
-    "name": "ced",
-    "frens": [
-      "jxf",
-      "eleeza",
-      "omar"
-    ]
-  }
+    "ced": {
+        "afternoon": {
+            "badAnswerOpts": {
+                "bad": "entertaining? hell, your fbi guy\nthinks he's watching a sitcom.",
+                "good": "i wonder if our fbi guys are frens :3"
+            },
+            "badAnswerRes": "well its their JOB. besides, i think i make it\n pretty entertaining for them >:)\n",
+            "goodAnswerOpts": {
+                "bad": "wasting time thinking too hard \nabout a juvenile thought experiment",
+                "good": "being interrogated without even realizing it!!!"
+            },
+            "goodAnswerRes": "oh really, you're my fbi guy?\n then what am I doing right now?",
+            "intros": [
+                "do you ever get the feeling \nthat someone is watching you?",
+                "don't look behind you right \nnow. it's for your own good."
+            ],
+            "prompt": "you're really trying \nto make me spend another week\n frantically trying to prove \nthat my fbi guy exists,\n aren't you.",
+            "promptOpts": {
+                "bad": "as if anyone would want \nto spend time watching YOU",
+                "good": "bold of you to assume \nthat you're not\n talking to your fbi \nperson right now >:("
+            }
+        },
+        "final": {
+            "bestCase": "merges PR immediately\nand pushes it into prod without even\ntesting it!",
+            "mediocre": "reviews the PR carefully ... _\n... as eleeza has hardly been consistent\nas of late ...",
+            "worstCase": "rejects the PR without even\nlooking at the code"
+        },
+        "frens": [
+            "jxf",
+            "eleeza",
+            "omar"
+        ],
+        "morning": {
+            "badAnswerOpts": {
+                "bad": "GET BACK TO YOUR CAVES, GOBLIN!!!",
+                "good": "well ya, im sure cave air gets\nstale after a while :P\nmaybe make a game that takes place\nin a nice wooded meadow :)"
+            },
+            "badAnswerRes": "that pun ... hurts.\nand leeza its boring to do\nthe same thing over n over ;o;",
+            "goodAnswerOpts": {
+                "bad": "i thought that was intentional\non your part :| guess you weren't as\nclever as I thought you were LOL",
+                "good": "stop acting like you didn't do\nthat on purpose lol"
+            },
+            "goodAnswerRes": "woaa, the cave is a metaphor\nfor being stuck somewhere creatively :O\n\nyou're a genius!!!",
+            "intros": [
+                "haiii makin anything cool?",
+                "sup nerd.\n        next game hatch wen?"
+            ],
+            "prompt": "im finally making a game that doesn't\ntake place in a cave!\nim proud to say my cave goblin days\nare coming to an end :)",
+            "promptOpts": {
+                "bad": "NOOOO ced don't cave on me!!!",
+                "good": "glad you're leaving your gloomy comfort zone!"
+            }
+        },
+        "name": "ced"
+    }
 }
