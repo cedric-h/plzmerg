@@ -1,0 +1,277 @@
+{
+    "belle": {
+        "afternoon": {
+            "badAnswerOpts": {
+                "bad": "HAH, you need more practice.",
+                "good": "Here's a few videos that might help!"
+            },
+            "badAnswerRes": "kinda? i'm having trouble with her face tho :((",
+            "goodAnswerOpts": {
+                "bad": "Bad",
+                "good": "Oh god"
+            },
+            "goodAnswerRes": "hehe, it's inspired by your art style!",
+            "intros": [
+                "Good morning. Whatchu doing?",
+                "AAAAAAAA what are you up to?"
+            ],
+            "prompt": "drawing my sister :))",
+            "promptOpts": {
+                "bad": "Are you getting anywhere?",
+                "good": "pretty cool :0"
+            }
+        },
+        "final": {
+            "bestCase": "merges PR immediately\nand pushes it into prod without even\ntesting it!",
+            "mediocre": "reviews the PR carefully ...",
+            "worstCase": "ignores her PR"
+        },
+        "frens": [
+            "ella",
+            "tej",
+            "mutammim"
+        ],
+        "morning": {
+            "badAnswerOpts": {
+                "bad": "Only?",
+                "good": "Well, at least you're doing something about it!"
+            },
+            "badAnswerRes": "4 feet :))",
+            "goodAnswerOpts": {
+                "bad": "Eh, it's so so",
+                "good": ":,)"
+            },
+            "goodAnswerRes": "yes, i'm kinda proud of this joke haha :))",
+            "intros": [
+                "haiii whatchu working on?",
+                "working on anything kewl ^_^ ?"
+            ],
+            "prompt": "building a grave for my insecurities",
+            "promptOpts": {
+                "bad": "How deep is it?",
+                "good": "Hah"
+            }
+        },
+        "name": "belle"
+    },
+    "ced": {
+        "afternoon": {
+            "badAnswerOpts": {
+                "bad": "entertaining? hell, your fbi guy\nthinks he's watching a sitcom.",
+                "good": "i wonder if our fbi guys are frens :3"
+            },
+            "badAnswerRes": "well its their JOB. besides, i think i make it\n pretty entertaining for them >:)\n",
+            "goodAnswerOpts": {
+                "bad": "wasting time thinking too hard \nabout a juvenile thought experiment",
+                "good": "being interrogated without even realizing it!!!"
+            },
+            "goodAnswerRes": "oh really, you're my fbi guy?\n then what am I doing right now?",
+            "intros": [
+                "do you ever get the feeling \nthat someone is watching you?",
+                "don't look behind you right \nnow. it's for your own good."
+            ],
+            "prompt": "you're really trying \nto make me spend another week\n frantically trying to prove \nthat my fbi guy exists,\n aren't you.",
+            "promptOpts": {
+                "bad": "as if anyone would want \nto spend time watching YOU",
+                "good": "bold of you to assume \nthat you're not\n talking to your fbi \nperson right now >:("
+            }
+        },
+        "final": {
+            "bestCase": "merges PR immediately\nand pushes it into prod without even\ntesting it!",
+            "mediocre": "reviews the PR carefully ... _\n... as eleeza has hardly been consistent\nas of late ...",
+            "worstCase": "rejects the PR without even\nlooking at the code"
+        },
+        "frens": [
+            "jxf",
+            "eleeza",
+            "omar"
+        ],
+        "morning": {
+            "badAnswerOpts": {
+                "bad": "GET BACK TO YOUR CAVES, GOBLIN!!!",
+                "good": "well ya, im sure cave air gets\nstale after a while :P\nmaybe make a game that takes place\nin a nice wooded meadow :)"
+            },
+            "badAnswerRes": "that pun ... hurts.\nand leeza its boring to do\nthe same thing over n over ;o;",
+            "goodAnswerOpts": {
+                "bad": "i thought that was intentional\non your part :| guess you weren't as\nclever as I thought you were LOL",
+                "good": "stop acting like you didn't do\nthat on purpose lol"
+            },
+            "goodAnswerRes": "woaa, the cave is a metaphor\nfor being stuck somewhere creatively :O\n\nyou're a genius!!!",
+            "intros": [
+                "haiii makin anything cool?",
+                "sup nerd.\n        next game hatch wen?"
+            ],
+            "prompt": "im finally making a game that doesn't\ntake place in a cave!\nim proud to say my cave goblin days\nare coming to an end :)",
+            "promptOpts": {
+                "bad": "NOOOO ced don't cave on me!!!",
+                "good": "glad you're leaving your gloomy comfort zone!"
+            }
+        },
+        "name": "ced"
+    },
+    "ellie": {
+        "afternoon": {
+            "badAnswerOpts": {
+                "bad": "as much as I enjoy waking up at 5:30 AM",
+                "good": "Me too!"
+            },
+            "badAnswerRes": "I enjoy it, though",
+            "goodAnswerOpts": {
+                "bad": "less that desired",
+                "good": "It's working, at least..."
+            },
+            "goodAnswerRes": "So, how's school working out",
+            "intros": [
+                "an attempt to make conversation has been made",
+                "I'm attempting conversation on you"
+            ],
+            "prompt": "I suppose your attempt has succeded",
+            "promptOpts": {
+                "bad": "for you, that's not hard",
+                "good": "I hope'd it would ^_^"
+            }
+        },
+        "final": {
+            "bestCase": "Merge it after a breif code review, perhaps add attribution to the README",
+            "mediocre": "* eyes code dubiously *",
+            "worstCase": "rejects PR, locks repo, deletes GitHub account, breaks phone, flees the country"
+        },
+        "frens": [
+            "cs",
+            "ishan",
+            "Eli"
+        ],
+        "morning": {
+            "badAnswerOpts": {
+                "bad": ":0",
+                "good": "only if you let me try it"
+            },
+            "badAnswerRes": "that pun ... hurts.\nand leeza its boring to do\nthe same thing over n over ;o;",
+            "goodAnswerOpts": {
+                "bad": "isn't vanilla cake light?",
+                "good": "is it a good vanilla cave?"
+            },
+            "goodAnswerRes": "a dark one",
+            "intros": [
+                "working on something?",
+                "workin' on somethin'?"
+            ],
+            "prompt": "im finally making a game that doesn't\ntake place in a cave!\nim proud to say my cave goblin days\nare coming to an end :)",
+            "promptOpts": {
+                "bad": "what kind of cave is it?",
+                "good": "what kind of vanilla cave is it?"
+            }
+        },
+        "name": "ellie"
+    },
+    "jessicard": {
+        "afternoon": {
+            "badAnswerOpts": {
+                "bad": "*crickets*",
+                "good": "Just kidding i'm still hereeeeeee"
+            },
+            "badAnswerRes": "oh no, i hope you are logging off to keep me on\ntask, but it's been helpful having you around to\nkeep me on track!",
+            "goodAnswerOpts": {
+                "bad": "Ew, gushers? Maybe a different snack",
+                "good": "That's the spirit"
+            },
+            "goodAnswerRes": "that's a good idea..... LETS GET SOME GUSHERS AND\nROLLLLLLL",
+            "intros": [
+                "How's your project going?",
+                "Did you fall asleep with the dogs"
+            ],
+            "prompt": "i didn't fall asleep with the dogs! a good first step.\nhowever, my project is proving difficult and i need\nsome motivation. halp",
+            "promptOpts": {
+                "bad": "*logs off*",
+                "good": "Get a snack, reset yourself, and try again"
+            }
+        },
+        "final": {
+            "bestCase": "sprinkle the PR with emoji and praise how\ngood the code is despite working on their presentation\nall day! deploy straight to production!",
+            "mediocre": "the PR remains untouched for the night,\nas today has been a sleepy day",
+            "worstCase": "the repository mysteriously vanishes and the\nPR is nowhere to be found. was it deleted!?"
+        },
+        "frens": [
+            "msw",
+            "eleeza",
+            "ced"
+        ],
+        "morning": {
+            "badAnswerOpts": {
+                "bad": "Zzzzzzzzzz........ it's nap time now",
+                "good": "What if we motivate each other to do the things\nwe need to do now?\nThat way we can be lazy later when we finish ^__^"
+            },
+            "badAnswerRes": "shoot... I really would like to get that thing working,\nbut.... maybe tomorrow....",
+            "goodAnswerOpts": {
+                "bad": "If you're comfy right now though, maybe a small nap\nwouldn't be the worst...",
+                "good": "I'm so proud of us :')"
+            },
+            "goodAnswerRes": "that's pretty wise. if we get up now and do the\nthings, we can laze around later and feel really\ngood about it. ok, you've convinced me :)",
+            "intros": [
+                "AAAAAAAAAAAA THE PRESENTATION IS DUE TOMORROW\nAAAAAAAAAAAAAAA\nLet's ignore that for now\nWhat are you up to?",
+                "I could crochet, or I could work on my presentation.\nWhich I forgot is due tomorrow\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nOh well what are you doing today"
+            ],
+            "prompt": "oh god, i'm glad i don't have a presentation due\ntomorrow!\ni'm just trying to figure out if i should stay cozy\nunder this blanket with the dogs, or if this day\nis finally the day i re-assemble my knitting machine",
+            "promptOpts": {
+                "bad": "Maybe we should both ignore real life for awhile\nI'm sleeeeeepy",
+                "good": "Thinking about how we might regret being unmotivated\nall day\nMaybe we should both agree to get up and work\non our things"
+            }
+        },
+        "name": "jessicard"
+    },
+    "msw": {
+        "afternoon": {
+            "badAnswerOpts": {
+                "bad": "the squircle was always an inferior shape",
+                "good": "this is why we need a communist star sticker"
+            },
+            "badAnswerRes": "not working? it's about to unionize",
+            "goodAnswerOpts": {
+                "bad": "HOW COULD YOU RUIN THIS?!?\nWE WERE ON THE A TRAIN",
+                "good": "AAAAAAAAAALMAO"
+            },
+            "goodAnswerRes": "AAAAAAAAAAAAAALMAO",
+            "intros": [
+                "How'd the sticker design come out?\nGet it all fixed? ^_^",
+                "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "prompt": "AAAAAAAAAAAAA!!!",
+            "promptOpts": {
+                "bad": "so the sticker design isn't working?",
+                "good": "AAAAAAAAAAAAAAAAA!!!"
+            }
+        },
+        "final": {
+            "bestCase": "Reviews thoroughly and gives approval with glowing comments such as\n\"LGTM\" and \"Wahoo\"",
+            "mediocre": "Reviews PR and gives an approval, but leaves\nan inline comment asking to fix the typo on \"colour\"",
+            "worstCase": "force push to master with comment\n\n> commit awhkdaklshjldkajskdjasd (HEAD->master)\n> Author: Eleeza\n>     Eleeza's work IDK if it works :shrug:"
+        },
+        "frens": [
+            "ced",
+            "eleeza",
+            "celeste"
+        ],
+        "morning": {
+            "badAnswerOpts": {
+                "bad": "*slaps roof of figma* this bad boy can store so many\nsticker designs",
+                "good": "lol"
+            },
+            "badAnswerRes": "lol",
+            "goodAnswerOpts": {
+                "bad": "actually, nah-- i don't think that design works :/",
+                "good": "try WALL-e instead of DALL-e? it was a great movie!"
+            },
+            "goodAnswerRes": "GENIUS! i tried searching for other designs online,\nusing DALL-e, and chanting in old elvish, but nothing\nwas working!",
+            "intros": [
+                "Hi! Are you working on anything? ^_^",
+                "soooo........ uhhhh, whatcha working on? :eyes:"
+            ],
+            "prompt": "well, i have a sticker design but i don't know how\nto make it into a hack club sticker",
+            "promptOpts": {
+                "bad": "Just slap an \"h\" on that bad boy!",
+                "good": "just *stick* with it, you'll figure it out!"
+            }
+        },
+        "name": "msw"
+    }
+}

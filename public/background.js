@@ -30,7 +30,7 @@ window.onkeydown = e => {
     if (e.shiftKey)
       input += '\n';
     else
-      window.location = "/?input=" + encodeURI(input);
+      window.location.search = "?input=" + encodeURI(input);
   } else if (e.key.length > 1)
     e.preventDefault();
   else

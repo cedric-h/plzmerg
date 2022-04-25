@@ -1,9 +1,8 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 3013;
 
 app.use(require('cookie-session')({
-  name: "" + new Date(),
   secret: '1337 h4x0r'
 }));
 
@@ -371,22 +370,21 @@ function *seshGen() {
 
     yield *makeInteractions(save);
 
+    hcers[save.name] = save;
+    saveHcers();
+
     yield `great, you're all done!
       your character should exist in the edit page,
       as well as in the game itself!`;
-
-    hcers[save.name] = save;
-    saveHcers();
   }
 
   function *chooseHcer(verb) {
     let names = Object.keys(hcers);
 
-    let msg = `which hcer ${verb}?\n`;
+    let msg = `which Hack Clubber would you like ${verb}?\n`;
     const ROW_SIZE = 3;
-    for (let i = 0; i < Math.ceil(names.length/ROW_SIZE); i++) {
+    while (names.length)
       msg += names.splice(0, ROW_SIZE).join(", ") + "\n";
-    }
     console.log('making msg for chooseHcer', names, msg);
 
     names = Object.keys(hcers);
@@ -553,7 +551,7 @@ app.get('/', (req, res) => {
 
   if ([...params].length) {
     req.session.next = next(params.get("input"));
-    return res.redirect("/");
+    return res.redirect("/plzmerg");
   }
 
   let title = false, lines = req.session.next;
