@@ -400,9 +400,9 @@ function *seshGen() {
       .map(([key, val]) => ({ key, val }));
     let msg = `${prompt}
 
-    "0 - ${opts[0].val}"
+    0 - "${opts[0].val}"
 
-    #1 - ${opts[1].val}#`;
+    1 - #${opts[1].val}#`;
 
     let select;
     while (!(select = opts[yield msg]))
