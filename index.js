@@ -495,7 +495,7 @@ function *seshGen() {
       you begin to worry ... will your contributions
       be accepted after all?
       
-      tenatively, you dm them a link to your pull request ...
+      tentatively, you dm them a link to your pull request ...
     `;
 
     let msg;
