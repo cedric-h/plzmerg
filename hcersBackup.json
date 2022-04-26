@@ -1,4 +1,59 @@
 {
+    "Eleeza": {
+        "afternoon": {
+            "badAnswerOpts": {
+                "bad": "yep",
+                "good": "We'll just take a snack on the way to school then. A breakfast bar? A date?"
+            },
+            "badAnswerRes": "please don't tell me we have assembly tomorrow",
+            "goodAnswerOpts": {
+                "bad": "next thing you know you'll be doing that now",
+                "good": "That'll be funny lol"
+            },
+            "goodAnswerRes": "Good point, maybe tomorrow I'll add Professor Silversaw to this, just for a laugh lol",
+            "intros": [
+                "i'm so tired.....",
+                "still not tired?"
+            ],
+            "prompt": "I should...really sleep soon but i don't want to",
+            "promptOpts": {
+                "bad": "Guess that means no tea tomorrow morning",
+                "good": "Sleep now. You've got another day tomorrow to play the fun game your awesome\nfriends made :)"
+            }
+        },
+        "final": {
+            "bestCase": "I slept well tonight! We merge the PR with a smile :)",
+            "mediocre": "tired......i'll do it later",
+            "worstCase": "pain"
+        },
+        "frens": [
+            "jxf",
+            "eleeza",
+            "omar"
+        ],
+        "morning": {
+            "badAnswerOpts": {
+                "bad": "Not going to sleep either way... :)",
+                "good": "Don't you enjoy the thrill of such pain? (:"
+            },
+            "badAnswerRes": "Yeah, right, if we don't sleep now we'll be falling asleep in class.",
+            "goodAnswerOpts": {
+                "bad": "i can't remember any more lyrics ;-;",
+                "good": "*continues singing*"
+            },
+            "goodAnswerRes": "THERE'S NOTHING TO BE FOOLISH A-AAAH DARLING STAY AND WATCH ME DISREGARD\nADVICE THAT YOU ONCE GAVE TO MEEEEEEEE-IF THE SHADOW THAT HIDES IN MY ROOM\nOFFERED ME HIS HAND- IT'S NEGATIVE-A-FEW DEGREES OUTSIDE, BUT I FEEL FIIIIIIIIIIIIINE-\nENERGY PUTS UP A FIGHT, I WON'T GET TO SLEEP TONIGHT- DON'T LET ME FALL, LET ME\nFALL DEEPER DOWN THE SPIIIIIIIIIIRAL, I'M A VICTIM OF MY MIND- I WOKE UP FROM THE\nNIGHTMARE, I'M LIVING AGAAAAAAAAAAAIN----",
+            "intros": [
+                "Ah yes, \"who needs sleep?\"",
+                "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "prompt": "Looks like you wanna sing about it...?",
+            "promptOpts": {
+                "bad": "Aaaahahah, \"darling\", you are simply drunk on sleep deprivation...",
+                "good": "I'M TRAPPED IN YOUR TWO-TONED DOLL HOUSE-"
+            }
+        },
+        "name": "Eleeza"
+    },
     "belle": {
         "afternoon": {
             "badAnswerOpts": {
@@ -164,6 +219,61 @@
         },
         "name": "ellie"
     },
+    "ishan": {
+        "afternoon": {
+            "badAnswerOpts": {
+                "bad": "nah",
+                "good": "honestly i just need an excuse to talk to you ^_^;;;;;"
+            },
+            "badAnswerRes": "come on there has to be something you can tell me. why'd you tell me about the dream anyway?",
+            "goodAnswerOpts": {
+                "bad": "no lol my dreams are original",
+                "good": "oh yeah i forgot about that video... my brain just remembered it i guess ^_^"
+            },
+            "goodAnswerRes": "lmao that's amazing. any chance you just rediscovered the duck song and added an elise?",
+            "intros": [
+                "Ishan i had this crazy dream",
+                "lol i just had this insane dream ..."
+            ],
+            "prompt": "oh? what was it about?",
+            "promptOpts": {
+                "bad": "that's kinda private honestly",
+                "good": "it was so weird... it involved elise (which is why i remembered you) and an actual duck. she was at this park and there was a lemonade stand??? dreams are so strange"
+            }
+        },
+        "final": {
+            "bestCase": "comments a sparkling heart and a knife, smiles IRL and merges. Ishan DMs you a thanks too",
+            "mediocre": "reviews, raises eyebrows at references, comments \"Hey Eleeza! Try to make your code more consistent with the rest of it. thanks!\" and goes offline...",
+            "worstCase": "can't be bothered, so lets the PR stay without any response..."
+        },
+        "frens": [
+            "ced",
+            "msw",
+            "belle"
+        ],
+        "morning": {
+            "badAnswerOpts": {
+                "bad": "lol it feels like you're always procrastinating",
+                "good": "oof im procrastinating too huhuhuh..."
+            },
+            "badAnswerRes": "errrrr i promise i'm done with it ... (nervous laughter)",
+            "goodAnswerOpts": {
+                "bad": "nahhhhh not right now",
+                "good": "okay ^_^! it's not done yet but here it is (lemme fetch it)"
+            },
+            "goodAnswerRes": "ooooo showw!!!!",
+            "intros": [
+                "hey ishan: what have you been up to? ^_^;",
+                "heyyy what are you doing"
+            ],
+            "prompt": "oh fixing this bug where Ben's RPC server won't make itself discoverable",
+            "promptOpts": {
+                "bad": "~~and what about your homework, hmm? ;P~~",
+                "good": "oh great. i was just adding some dialogue for elise to my game!! ^_^;;"
+            }
+        },
+        "name": "ishan"
+    },
     "jessicard": {
         "afternoon": {
             "badAnswerOpts": {
@@ -218,6 +328,61 @@
             }
         },
         "name": "jessicard"
+    },
+    "jxf": {
+        "afternoon": {
+            "badAnswerOpts": {
+                "bad": "Then it'll just be lightning without any\nstorm :zap::boom::skull:",
+                "good": "Well some people deserve to go out\nflashy and when they're in their prime"
+            },
+            "badAnswerRes": "Well...\nThat's certainly as en-lightning as it\nis shocking to hear.\nMy applause for this prospect is\nanything but thunderous.",
+            "goodAnswerOpts": {
+                "bad": "Thanks! I'd compliment you in return,\nbut I don't think I have anything worth\nmentioning in that department",
+                "good": "Haha.. well, it's pretty easy being\nsurrounded by inspirational people\nin Hack Club all the time"
+            },
+            "goodAnswerRes": "I am suddenly compelled to talk\nabout how cool it is that you write\nyour own songs and draw your own\nart.\nIt is very cool that you write your\nown songs and draw your own art.",
+            "intros": [
+                "Have you ever thought about...\nkilling someone?",
+                "The weather on the other side of\nthe pond has been bloody malarkey\nlately, innit bruv?"
+            ],
+            "prompt": "Indeed.\nI have been thinking of such lately.\nWhat of yourself?",
+            "promptOpts": {
+                "bad": "Not so much... but I wouldn't be too\nupset if a stray thunderbolt hit a\ncertain someone... >:)",
+                "good": "Uhh\nMaybe just a little\nI was just bored and wondering\nabout some song lyrics I wrote\n(because I'm cool enough to write\nmy own songs :v:)"
+            }
+        },
+        "final": {
+            "bestCase": "*Leaves comment*\nGreat job, kiddo.",
+            "mediocre": "*Leaves comment*\nK. : 1:",
+            "worstCase": "*Leaves comment*\nYour mother was a hamster.\nAnd your father smelt of elderberries."
+        },
+        "frens": [
+            "ced",
+            "ella",
+            "caleb"
+        ],
+        "morning": {
+            "badAnswerOpts": {
+                "bad": "I don't really like mapo tofu >:]",
+                "good": "Uhhh\nyeah\nSorry ^_^;;"
+            },
+            "badAnswerRes": "That joke cracks.\nBut also.\nOuch.\nAnywhomstead.\nMapo Tofu.",
+            "goodAnswerOpts": {
+                "bad": "True... you probably aren't capable\nenough to get it done by yourself :/",
+                "good": "If you need a helping farmhand, I've\na full silo of time, seeing that I'm usually\nall cooped up inside all day ^_^"
+            },
+            "goodAnswerRes": "Yeah.\nIt's going to be an absolute barn-ival\nif I get it done.\nI'm pretty bad at working solo, though.",
+            "intros": [
+                "Good morrow! Are you busy right now?",
+                "Assalamu alaikum, mera naam Eleeza hai,\naur ich kann nicht Urdu sprechen!"
+            ],
+            "prompt": "Guten Morgen.\nI'm surprised Eur-ope right now.\nI've been brainstorming about all these\ndifferent things I could add to this\nnondescript project.\nI would describe it as having chicken\nfights and nests.\nWhat's up with yourself?",
+            "promptOpts": {
+                "bad": "*You*'re making a project?\nI didn't know you could hen-dle such\nresponsibili-tea (because I'm British)",
+                "good": "That sounds egg-cellent!!\nI can't wait to see it :D\nI was just about to make some tea\n(because I'm British)"
+            }
+        },
+        "name": "jxf"
     },
     "msw": {
         "afternoon": {
